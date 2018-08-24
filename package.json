@@ -1,0 +1,12 @@
+{
+  "name": "metro-pnpm",
+  "dependencies": {
+    "fbjs": "0.8.17"
+  },
+  "devDependencies": {
+    "metro": "^0.43.5"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/metro build index.js -O bundle.js"
+  }
+}
