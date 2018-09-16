@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -e
+
+if [ ! -d "react-native" ]; then
+  # Clone 0.57-stable
+  git clone https://github.com/facebook/react-native.git -b 0.57-stable --depth 1
+
+  # Install react-native dependencies
+  cd react-native
+  npm install --production
+  cd ..
+fi
+
+# Install our dependencies
+if [ ! -d "node_modules" ]; then
+  npm install
+
+  # "react" must exist in "react-native/node_modules" for this setup to work
+  ln -s "$PWD/node_modules/react" ./react-native/node_modules
+fi
+
+# Run the bundler
+react-native bundle \
+  --entry-file index.js \
+  --bundle-output bundle.js \
+  --platform ios ||
+  {
+    if [ ! -f "react-native/.git/refs/heads/pr" ]; then
+      msg="Great! Now run ./fix and see it work"
+      echo -e "\x1B[7;49;93m$msg\x1B[0m"
+    fi
+  }

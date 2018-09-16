@@ -1,0 +1,9 @@
+{
+  "name": "rn-symlink",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-native": "file:./react-native"
+  }
+}

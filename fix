@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+
+if [ ! -d "react-native" ]; then
+  echo "Must run ./repro first"
+  exit 1
+fi
+
+cd react-native
+
+# Apply the pull request
+git fetch origin pull/21136/head:pr --no-tags
+git cherry-pick pr
+
+cd ..
+echo ""
+
+# Re-run the bundler
+./repro
+
+msg="Success!"
+echo -e "\n\x1B[5m$msg\x1B[0m"
