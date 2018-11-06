@@ -1,0 +1,7 @@
+{
+  "name": "repro",
+  "main": "lib/index.js",
+  "dependencies": {
+    "issue": "file:../issue"
+  }
+}
