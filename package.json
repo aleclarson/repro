@@ -1,0 +1,11 @@
+{
+  "name": "repro",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "bash ./postinstall.sh"
+  },
+  "dependencies": {
+    "typescript": "next"
+  }
+}
