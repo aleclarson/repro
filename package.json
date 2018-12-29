@@ -1,0 +1,10 @@
+{
+  "name": "yarn-5713",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "./postinstall.sh"
+  },
+  "devDependencies": {
+    "meta": "^1.2.15"
+  }
+}

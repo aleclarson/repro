@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "yarn": "https://github.com/yarnpkg/yarn.git"
+  }
+}
