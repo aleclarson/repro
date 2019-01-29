@@ -1,0 +1,10 @@
+{
+  "name": "repro",
+  "main": "lib/index.js",
+  "dependencies": {
+    "immer": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}
