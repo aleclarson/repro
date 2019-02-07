@@ -1,0 +1,11 @@
+{
+  "name": "repro",
+  "main": "lib/index.js",
+  "dependencies": {
+    "immer": "^1.12.1",
+    "immer-local": "file:./immer-local"
+  },
+  "devDependencies": {
+    "typescript": "next"
+  }
+}

@@ -1,0 +1,24 @@
+dependencies:
+  immer: 1.12.1
+  immer-local: 'link:immer-local'
+devDependencies:
+  typescript: 3.4.0-dev.20190207
+packages:
+  /immer/1.12.1:
+    dev: false
+    resolution:
+      integrity: sha512-3fmKM6ovaqDt0CdC9daXpNi5x/YCYS3i4cwLdTVkhJdk5jrDXoPs7lCm3IqM3yhfSnz4tjjxbRG2CziQ7m8ztg==
+  /typescript/3.4.0-dev.20190207:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-PaAReHMjo1JkkmTuCg7yV3zDj2bTmFPQ6r80M0KTPVolTGy8n6ums0J8Saor731IQu7VdeobuFvaQj1wnH59pw==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  immer: ^1.12.1
+  immer-local: 'file:./immer-local'
+  typescript: next

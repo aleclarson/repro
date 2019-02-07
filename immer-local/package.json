@@ -1,0 +1,8 @@
+{
+  "name": "immer-local",
+  "version": "1.12.1",
+  "description": "Create your next immutable state by mutating the current one",
+  "main": "dist/immer.js",
+  "module": "dist/immer.module.js",
+  "types": "./dist/immer.d.ts"
+}
