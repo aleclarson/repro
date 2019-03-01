@@ -1,0 +1,8 @@
+{
+  "name": "a",
+  "version": "0.0.0",
+  "dependencies": {
+    "@foo/bar": "link:../@foo/bar",
+    "b": "link:../b"
+  }
+}
