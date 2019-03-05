@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "capitalize-name-subreducer": "../capitalize-name-subreducer/",
+    "capitalize-name-subreducer": "link:../capitalize-name-subreducer",
     "immer": "^2.1.0"
   },
   "devDependencies": {}
