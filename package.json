@@ -6,13 +6,6 @@
     "start": "export NODE_ENV='production' && node ./server/start.js"
   },
   "dependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
-    "@babel/plugin-transform-runtime": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.3.3",
     "@brillout/cli-theme": "0.3.1",
     "@brillout/fetch": "^0.1.0",
     "@brillout/reconfig": "0.3.1",
