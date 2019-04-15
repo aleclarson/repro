@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "reframe dev",
+    "production": "npm run build && npm run start",
+    "build": "reframe build",
+    "start": "export NODE_ENV='production' && node ./server/start.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@brillout/cli-theme": "0.3.1",
+    "@brillout/fetch": "^0.1.0",
+    "@brillout/reconfig": "0.3.1",
+    "@reframe/cli": "0.3.1",
+    "@reframe/react-kit": "0.3.1",
+    "@universal-adapter/hapi": "^0.1.1",
+    "hapi": "^17.3.1",
+    "prettier": "^1.17.0",
+    "react": "^16.3.2",
+    "react-spring": "latest",
+    "typescript": "^3.4.3"
+  }
+}
