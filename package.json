@@ -1,0 +1,27 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleclarson/repro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleclarson/repro/issues"
+  },
+  "homepage": "https://github.com/aleclarson/repro#readme",
+  "devDependencies": {
+    "rollup": "^1.12.5",
+    "rollup-plugin-dts": "^0.15.1"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3"
+  }
+}
