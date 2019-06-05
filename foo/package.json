@@ -1,0 +1,16 @@
+{
+  "name": "foo",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "bar": "link:../bar"
+  },
+  "devDependencies": {
+    "dts-bundle-generator": "^3.1.0",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "build": "tsc -d -p . --outDir lib",
+    "build:dts": "dts-bundle-generator -o index.d.ts index.ts"
+  }
+}
