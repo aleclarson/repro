@@ -1,0 +1,9 @@
+{
+  "include": ["*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "bar": ["./node_modules/@foo/bar"]
+    }
+  }
+}

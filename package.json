@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "sh prepare.sh"
+  }
+}
