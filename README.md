@@ -1,32 +1,7 @@
-# Webpack Frontend Starterkit
+# repro/tree/webpack-1
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
+1. Run `npm install && npm start`
 
-A lightweight foundation for your next webpack based frontend project.
+2. Check the console for an error
 
-
-### Installation
-
-```
-npm install
-```
-
-### Start Dev Server
-
-```
-npm start
-```
-
-### Build Prod Version
-
-```
-npm run build
-```
-
-### Features:
-
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
+3. Webpack fails to convert an import reference (`t`) to its webpack identifier (`_react_spring_shared__WEBPACK_IMPORTED_MODULE_0__["is"]`)
