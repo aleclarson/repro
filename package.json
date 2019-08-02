@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "start": "NODE_OPTIONS=\"--inspect\" next start"
+  },
   "dependencies": {
     "next": "^9.0.2",
     "react": "^16.8.6",
