@@ -12,7 +12,7 @@ const MyComponent: React.FC<{ level: number; color: string }> = ({
     const newMessage = `Level ${level}`;
     console.log(newMessage);
     setMessage(newMessage);
-  }, []);
+  }, [level]);
 
   return (
     <div style={{ border: `4px solid ${color}` }}>
