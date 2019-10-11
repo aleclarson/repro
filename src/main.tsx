@@ -9,7 +9,9 @@ const MyComponent: React.FC<{ level: number; color: string }> = ({
 }) => {
   const [message, setMessage] = useState(DEFAULT_MESSAGE);
   useEffect(() => {
-    setMessage(`Level ${level}`);
+    const newMessage = `Level ${level}`;
+    console.log(newMessage);
+    setMessage(newMessage);
   });
 
   return (
