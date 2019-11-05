@@ -2,7 +2,7 @@ import { useTransition, animated } from "react-spring";
 
 const Cmp = React.memo(() => {
   const [bool, set] = React.useState(false);
-  const t = useTransition(bool, null, {
+  const t = useTransition(bool, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 }
@@ -10,9 +10,9 @@ const Cmp = React.memo(() => {
   return (
     <div>
       <button onClick={() => set(v => !v)}>toggle</button>
-      {t.map(({ item, props, key }) => {
+      {t((style, item) => {
         return item ? (
-          <animated.div key={key} style={props}>
+          <animated.div style={style}>
             hello
           </animated.div>
         ) : null;
