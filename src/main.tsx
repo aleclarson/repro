@@ -1,38 +1,44 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+function useTest(name: string) {
+  const [state, setState] = React.useState(0)
+  console.log(name + '.render:', state)
+  React.useEffect(() => {
+    console.log(name + ':' + state)
+    setState(1)
+  })
+  return state
+}
 
-const DEFAULT_MESSAGE = "loading ...";
-
-const MyComponent: React.FC<{ level: number; color: string }> = ({
-  level,
-  color
-}) => {
-  const [message, setMessage] = useState(DEFAULT_MESSAGE);
-  useEffect(() => {
-    const newMessage = `Level ${level}`;
-    console.log(newMessage);
-    setMessage(newMessage);
-  }, [level]);
-
+function Root1() {
+  const state = useTest('Root1')
   return (
-    <div style={{ border: `4px solid ${color}` }}>
-      {message}
-      {message !== DEFAULT_MESSAGE && level > 0 && (
-        <MyComponent level={level - 1} color={color} />
-      )}
+    <div>
+      {'' + state}
+      {state && <Child1 />}
     </div>
-  );
-};
+  )
+}
+function Child1() {
+  const state = useTest('Child1')
+  return (
+    <div>
+      {'' + state}
+      {state && <Child2 />}
+    </div>
+  )
+}
+function Child2() {
+  const state = useTest('Child2')
+  return <div>{'' + state}</div>
+}
 
-ReactDOM.render(
-  <MyComponent level={10} color="green" />,
-  document.querySelector("#root1")
-);
-ReactDOM.render(
-  <MyComponent level={10} color="red" />,
-  document.querySelector("#root2")
-);
-ReactDOM.render(
-  <MyComponent level={10} color="yellow" />,
-  document.querySelector("#root3")
-);
+function Root2() {
+  React.useEffect(() => {
+    console.log('Root2')
+  }, [])
+  return null
+}
+
+ReactDOM.render(<Root1 />, document.querySelector('#root1'))
+ReactDOM.render(<Root2 />, document.querySelector('#root2'))
