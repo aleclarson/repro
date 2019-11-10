@@ -19,6 +19,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
+    "indo": "^0.3.16",
     "prettier": "^1.19.1",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
