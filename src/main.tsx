@@ -1,11 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { AppRegistry, View, Text } from 'react-native'
+
 function useTest(name: string) {
-  const [state, setState] = React.useState(0)
+  const [state, setState] = React.useState(false)
   console.log(name + '.render:', state)
   React.useEffect(() => {
     console.log(name + ':' + state)
-    setState(1)
+    setState(true)
   })
   return state
 }
@@ -13,24 +14,24 @@ function useTest(name: string) {
 function Root1() {
   const state = useTest('Root1')
   return (
-    <div>
-      {'' + state}
+    <View>
+      <Text>{'' + state}</Text>
       {state && <Child1 />}
-    </div>
+    </View>
   )
 }
 function Child1() {
   const state = useTest('Child1')
   return (
-    <div>
-      {'' + state}
+    <View>
+      <Text>{'' + state}</Text>
       {state && <Child2 />}
-    </div>
+    </View>
   )
 }
 function Child2() {
   const state = useTest('Child2')
-  return <div>{'' + state}</div>
+  return <Text>{'' + state}</Text>
 }
 
 function Root2() {
@@ -40,5 +41,5 @@ function Root2() {
   return null
 }
 
-ReactDOM.render(<Root1 />, document.querySelector('#root1'))
-ReactDOM.render(<Root2 />, document.querySelector('#root2'))
+AppRegistry.registerComponent('Root1', () => Root1)
+AppRegistry.registerComponent('Root2', () => Root2)

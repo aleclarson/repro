@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70CDF33F22FA008500ECA452 /* Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CDF31E22FA008500ECA452 /* Example.m */; };
+		70CDF34122FA008500ECA452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CDF32622FA008500ECA452 /* main.m */; };
+		70CDF34522FA008500ECA452 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CDF32B22FA008500ECA452 /* Images.xcassets */; };
+		70CDF34B22FA008500ECA452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CDF33322FA008500ECA452 /* AppDelegate.m */; };
+		70CDF35222FA025400ECA452 /* AppWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CDF35122FA025400ECA452 /* AppWindow.m */; };
+		70E5E2F022CD810C00DD590B /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E5E2EF22CD810C00DD590B /* libRCTImage.a */; };
+		70E5E2F222CD810C00DD590B /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E5E2F122CD810C00DD590B /* libRCTNetwork.a */; };
+		70E5E2F422CD810C00DD590B /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E5E2F322CD810C00DD590B /* libRCTText.a */; };
+		70E5E2F622CD810C00DD590B /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E5E2F522CD810C00DD590B /* libRCTWebSocket.a */; };
+		70E5E2FD22CD810C00DD590B /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E5E2D322CD80B100DD590B /* libReact.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7044B0682378D3410077AB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		70E5E2D222CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		70E5E2D422CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		70E5E2D622CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		70E5E2D822CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		70E5E2DA22CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
+			remoteInfo = jsinspector;
+		};
+		70E5E2DC22CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		70E5E2DE22CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		70E5E2E022CD80B100DD590B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
+			remoteInfo = privatedata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		705CBE2722E3A4F000C2FC93 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		703FE7CA2318B81600937876 /* libRCTLinking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTLinking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		703FE7DD2319E62100937876 /* libRNCMaskedView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCMaskedView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7045C32B230644FA000AB285 /* libART.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libART.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		705CBE1D22E3A4EA00C2FC93 /* libRNSVGKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVGKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CDF31E22FA008500ECA452 /* Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example.m; sourceTree = "<group>"; };
+		70CDF32222FA008500ECA452 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70CDF32622FA008500ECA452 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70CDF32B22FA008500ECA452 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70CDF32E22FA008500ECA452 /* Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
+		70CDF33222FA008500ECA452 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70CDF33322FA008500ECA452 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70CDF35022FA024900ECA452 /* AppWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppWindow.h; sourceTree = "<group>"; };
+		70CDF35122FA025400ECA452 /* AppWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppWindow.m; sourceTree = "<group>"; };
+		70E065CB231AB1AE005BE2E9 /* libSentryStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSentryStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2C722CD80B100DD590B /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		70E5E2ED22CD810C00DD590B /* libRCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2EF22CD810C00DD590B /* libRCTImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2F122CD810C00DD590B /* libRCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTNetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2F322CD810C00DD590B /* libRCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2F522CD810C00DD590B /* libRCTWebSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTWebSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2F722CD810C00DD590B /* libRNSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSentry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E5E2FB22CD810C00DD590B /* libRNSVGKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVGKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E61C7422F7A593000C5DF8 /* DisplayServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DisplayServices.framework; path = /System/Library/PrivateFrameworks/DisplayServices.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E5E2F022CD810C00DD590B /* libRCTImage.a in Frameworks */,
+				70E5E2F222CD810C00DD590B /* libRCTNetwork.a in Frameworks */,
+				70E5E2F422CD810C00DD590B /* libRCTText.a in Frameworks */,
+				70E5E2F622CD810C00DD590B /* libRCTWebSocket.a in Frameworks */,
+				70E5E2FD22CD810C00DD590B /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70B0966221CBFBC500CA17F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70E065CB231AB1AE005BE2E9 /* libSentryStatic.a */,
+				703FE7DD2319E62100937876 /* libRNCMaskedView.a */,
+				703FE7CA2318B81600937876 /* libRCTLinking.a */,
+				70E61C7422F7A593000C5DF8 /* DisplayServices.framework */,
+				705CBE1D22E3A4EA00C2FC93 /* libRNSVGKit.a */,
+				70E5E2ED22CD810C00DD590B /* libRCTAnimation.a */,
+				70E5E2EF22CD810C00DD590B /* libRCTImage.a */,
+				70E5E2F122CD810C00DD590B /* libRCTNetwork.a */,
+				70E5E2F322CD810C00DD590B /* libRCTText.a */,
+				70E5E2F522CD810C00DD590B /* libRCTWebSocket.a */,
+				70E5E2F722CD810C00DD590B /* libRNSentry.a */,
+				70E5E2FB22CD810C00DD590B /* libRNSVGKit.a */,
+				7045C32B230644FA000AB285 /* libART.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70CDF31622FA008500ECA452 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				70CDF32B22FA008500ECA452 /* Images.xcassets */,
+				70CDF33222FA008500ECA452 /* Info.plist */,
+				70CDF32622FA008500ECA452 /* main.m */,
+				70CDF32E22FA008500ECA452 /* Example.h */,
+				70CDF31E22FA008500ECA452 /* Example.m */,
+				70CDF32222FA008500ECA452 /* AppDelegate.h */,
+				70CDF33322FA008500ECA452 /* AppDelegate.m */,
+				70CDF35022FA024900ECA452 /* AppWindow.h */,
+				70CDF35122FA025400ECA452 /* AppWindow.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		70E5E2C622CD809A00DD590B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				70E5E2C722CD80B100DD590B /* React.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		70E5E2C822CD80B100DD590B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70E5E2D322CD80B100DD590B /* libReact.a */,
+				70E5E2D522CD80B100DD590B /* libyoga.a */,
+				70E5E2D722CD80B100DD590B /* libcxxreact.a */,
+				70E5E2D922CD80B100DD590B /* libjschelpers.a */,
+				70E5E2DB22CD80B100DD590B /* libjsinspector.a */,
+				70E5E2DD22CD80B100DD590B /* libthird-party.a */,
+				70E5E2DF22CD80B100DD590B /* libdouble-conversion.a */,
+				70E5E2E122CD80B100DD590B /* libprivatedata.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				70CDF31622FA008500ECA452 /* Sources */,
+				70E5E2C622CD809A00DD590B /* Libraries */,
+				70B0966221CBFBC500CA17F6 /* Frameworks */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				702A3D3722CD0F4600395CCD /* Resources */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				705CBE2722E3A4F000C2FC93 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7044B0692378D3410077AB7D /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 3HKTG4SKSV;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70E5E2C822CD80B100DD590B /* Products */;
+					ProjectRef = 70E5E2C722CD80B100DD590B /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		70E5E2D322CD80B100DD590B /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 70E5E2D222CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2D522CD80B100DD590B /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 70E5E2D422CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2D722CD80B100DD590B /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 70E5E2D622CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2D922CD80B100DD590B /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 70E5E2D822CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2DB22CD80B100DD590B /* libjsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsinspector.a;
+			remoteRef = 70E5E2DA22CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2DD22CD80B100DD590B /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 70E5E2DC22CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2DF22CD80B100DD590B /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 70E5E2DE22CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E5E2E122CD80B100DD590B /* libprivatedata.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprivatedata.a;
+			remoteRef = 70E5E2E022CD80B100DD590B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		702A3D3722CD0F4600395CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CDF34522FA008500ECA452 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CDF35222FA025400ECA452 /* AppWindow.m in Sources */,
+				70CDF34122FA008500ECA452 /* main.m in Sources */,
+				70CDF34B22FA008500ECA452 /* AppDelegate.m in Sources */,
+				70CDF33F22FA008500ECA452 /* Example.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7044B0692378D3410077AB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = 7044B0682378D3410077AB7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lxml2",
+					"-Wl,-U,_CoreDisplay_Display_SetUserBrightness",
+					"-Wl,-U,_DisplayServicesCanChangeBrightness",
+					"-Wl,-U,_DisplayServicesBrightnessChanged",
+					"-Wl,-U,_CGSSetWorkspaceForWindow",
+				);
+				PRODUCT_NAME = Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lxml2",
+					"-Wl,-U,_CoreDisplay_Display_SetUserBrightness",
+					"-Wl,-U,_DisplayServicesCanChangeBrightness",
+					"-Wl,-U,_DisplayServicesBrightnessChanged",
+					"-Wl,-U,_CGSSetWorkspaceForWindow",
+				);
+				PRODUCT_NAME = Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+			};
+			name = Release;
+		};
+		707ECE26226B755E00EE4436 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: alec.stanford.larson@gmail.com (T5Z76959MX)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "RCT_DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LiteTimer/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		707ECE27226B755E00EE4436 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lxml2",
+					"-Wl,-U,_CoreDisplay_Display_SetUserBrightness",
+					"-Wl,-U,_DisplayServicesCanChangeBrightness",
+					"-Wl,-U,_DisplayServicesBrightnessChanged",
+					"-Wl,-U,_CGSSetWorkspaceForWindow",
+				);
+				PRODUCT_NAME = Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+			};
+			name = QA;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: alec.stanford.larson@gmail.com (T5Z76959MX)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LiteTimer/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: alec.stanford.larson@gmail.com (T5Z76959MX)";
+				DEVELOPMENT_TEAM = 3HKTG4SKSV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LiteTimer/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				707ECE27226B755E00EE4436 /* QA */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				707ECE26226B755E00EE4436 /* QA */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
