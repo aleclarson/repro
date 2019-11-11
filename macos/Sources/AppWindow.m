@@ -4,7 +4,7 @@
 
 @implementation AppWindow
 
-- (instancetype)init
+- (instancetype)initWithModuleName:(NSString *)moduleName
 {
   NSURL *bundleURL = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:bundleURL moduleProvider:nil launchOptions:nil];
@@ -18,7 +18,7 @@
     self.hasShadow = YES;
     
     // Render the React application.
-    self.contentView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"Example" initialProperties:nil];
+    self.contentView = [[RCTRootView alloc] initWithBridge:bridge moduleName:moduleName initialProperties:nil];
     
     __weak __typeof(self) weakSelf = self;
     RCTKeyCommands *commands = [RCTKeyCommands sharedInstance];

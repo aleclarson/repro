@@ -3,4 +3,6 @@
 
 @interface AppWindow : RCTWindow <NSWindowDelegate>
 
+- (instancetype)initWithModuleName:(NSString *)moduleName;
+
 @end
