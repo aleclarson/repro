@@ -1,0 +1,7 @@
+diff --git a/index.d.ts b/index.d.ts
+new file mode 100644
+index 0000000..5253ce1
+--- /dev/null
++++ b/index.d.ts
+@@ -0,0 +1 @@
++export * from 'testing-library__react'
