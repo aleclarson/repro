@@ -1,0 +1,29 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleclarson/repro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleclarson/repro/issues"
+  },
+  "homepage": "https://github.com/aleclarson/repro#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "rollup": "^2.1.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
