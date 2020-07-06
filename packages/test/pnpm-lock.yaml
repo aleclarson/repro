@@ -1,0 +1,10 @@
+dependencies:
+  glob-regex: 0.3.2
+lockfileVersion: 5.1
+packages:
+  /glob-regex/0.3.2:
+    dev: false
+    resolution:
+      integrity: sha512-m5blUd3/OqDTWwzBBtWBPrGlAzatRywHameHeekAZyZrskYouOGdNB8T/q6JucucvJXtOuyHIn0/Yia7iDasDw==
+specifiers:
+  glob-regex: ^0.3.2

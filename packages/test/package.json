@@ -1,0 +1,6 @@
+{
+  "name": "test",
+  "dependencies": {
+    "glob-regex": "^0.3.2"
+  }
+}

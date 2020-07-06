@@ -1,0 +1,7 @@
+{
+  "name": "chokidar-1",
+  "private": true,
+  "dependencies": {
+    "chokidar": "^3.4.0"
+  }
+}
