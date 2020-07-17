@@ -1,0 +1,18 @@
+{
+  "name": "https-local-1",
+  "version": "0.0.0",
+  "dependencies": {
+    "https-local": "^1.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "node-fetch": "^2.6.0",
+    "st": "^2.0.0"
+  },
+  "scripts": {
+    "start": "supervisor index.js",
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 node test.js",
+    "test:browser": "open https://localhost:8001/index.html"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
