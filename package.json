@@ -1,0 +1,8 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "vite": "^1.0.0-rc.4"
+  }
+}
