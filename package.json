@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "sirv dist"
+  },
+  "dependencies": {
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "sirv": "^1.0.7",
+    "typescript": "^3.9.3",
+    "vite": "^1.0.0-rc.8",
+    "vite-plugin-react": "^3.0.0"
+  }
+}

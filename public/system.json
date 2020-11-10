@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "react": "https://unpkg.com/react@17.0.1/umd/react.production.min.js",
+    "react-dom": "https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js"
+  }
+}
