@@ -1,0 +1,13 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@testing-library/react-native": "^7.1.0",
+    "@types/react-native": "^0.63.34",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@sentry/react-native": "^2.0.0",
+    "react-native": "^0.63.3"
+  }
+}
