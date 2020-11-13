@@ -1,0 +1,9 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/node": "^14.14.19",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
