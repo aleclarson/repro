@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es2018", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": "../../dist/client",
+    "strict": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "types": ["vite/client"]
+  }
+}
