@@ -1,0 +1,18 @@
+{
+  "name": "foo",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node --inspect-brk test.js"
+  },
+  "devDependencies": {
+    "@ampproject/remapping": "^1.0.1",
+    "convert-source-map": "^1.7.0",
+    "esbuild": "^0.12.8",
+    "rollup": "^2.51.2",
+    "sucrase": "^3.18.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
+}
