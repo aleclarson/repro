@@ -1,5 +1,5 @@
-// import {Foo} from './types'
-import './types'
+import {Foo} from './types'
+// import './types'
 
 const api = {
   foo(foo: Foo) {},

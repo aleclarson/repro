@@ -4,5 +4,5 @@ declare global {
   }
 }
 
-// export { Foo }
-export {}
+export { Foo }
+// export {}
