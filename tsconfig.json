@@ -1,0 +1,7 @@
+{
+  "files": ["main.ts", "types.d.ts"],
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"]
+  }
+}

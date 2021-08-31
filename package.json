@@ -1,0 +1,8 @@
+{
+  "name": "dts-8-31-2021",
+  "devDependencies": {
+    "rollup": "^2.56.3",
+    "rollup-plugin-dts": "^4.0.0",
+    "typescript": "^4.4.2"
+  }
+}
