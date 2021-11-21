@@ -5,14 +5,18 @@ specifiers:
   '@types/react-dom': ^17.0.0
   '@vitejs/plugin-react': ^1.0.0
   esm-package: link:../node_modules/esm-package
+  moment: ^2.29.1
   react: ^17.0.0
+  react-datetime: ^3.1.1
   react-dom: ^17.0.0
   typescript: ^4.3.2
   vite: ^2.6.4
 
 dependencies:
   esm-package: link:../node_modules/esm-package
+  moment: 2.29.1
   react: 17.0.2
+  react-datetime: 3.1.1_moment@2.29.1+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
 
 devDependencies:
@@ -659,6 +663,10 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
+  /moment/2.29.1:
+    resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==}
+    dev: false
+
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
@@ -700,6 +708,25 @@ packages:
       source-map-js: 0.6.2
     dev: true
 
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /react-datetime/3.1.1_moment@2.29.1+react@17.0.2:
+    resolution: {integrity: sha512-gHCTjAniCcMb6jdXpz+MpVe/uCeaHNDOofg+l41nLlJI3uBLBMV40CQbGB2TCTUpCzGT1mCs4vQzKGMjXO/WWQ==}
+    peerDependencies:
+      moment: ^2.16.0
+      react: ^16.5.0 || ^17.0.0
+    dependencies:
+      moment: 2.29.1
+      prop-types: 15.7.2
+      react: 17.0.2
+    dev: false
+
   /react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
@@ -709,6 +736,10 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-refresh/0.10.0:

@@ -7,7 +7,20 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="root"></div>
+    <p>
+      The following div will display an error message in dev, where the package
+      imports as undefined, and uppercased text in prod.
+    </p>
+    <div id="import-default"></div>
+    <p>
+      A real-world repro that shows different behavior:
+      <code>react-datetime</code> imports as a function in dev, but as an object
+      with a <code>default</code> property in production.
+    </p>
+    <div>
+      Type of <code>react-datetime</code> is
+      <span id="react-datetime-type"></span>
+    </div>
     <script type="module" src="/main.mjs"></script>
   </body>
 </html>

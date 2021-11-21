@@ -1,3 +1,9 @@
-import { default as esmPackage, cjs as cjsPackage } from "esm-package";
+import upper from "cjs-package";
+import Datetime from "react-datetime";
 
-document.body.textContent = JSON.stringify({ esmPackage, cjsPackage });
+document.querySelector("#import-default").textContent =
+  typeof upper === "function"
+    ? upper("The quick brown fox jumped over the lazy dog")
+    : `Tried to use upper(), but it was type ${typeof upper}`;
+
+document.querySelector("#react-datetime-type").textContent = typeof Datetime;
