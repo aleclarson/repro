@@ -1,0 +1,26 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "serve:db": "cd db && dolt sql-server",
+    "prepare": "sh prepare.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleclarson/repro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleclarson/repro/issues"
+  },
+  "homepage": "https://github.com/aleclarson/repro#readme",
+  "dependencies": {
+    "knex": "^1.0.7",
+    "mysql2": "^2.3.3"
+  }
+}
