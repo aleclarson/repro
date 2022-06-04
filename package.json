@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "typescript": "^4.7.3",
+    "vitest": "^0.13.1"
+  }
+}
