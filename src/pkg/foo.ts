@@ -1,1 +1,3 @@
-export const foo = 1
+import { add } from '../utils/add';
+
+export const foo = add(1, 2)

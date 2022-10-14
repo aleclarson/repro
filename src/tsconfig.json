@@ -1,0 +1,8 @@
+{
+  "exclude": ["pkg"],
+  "compilerOptions": {
+    "composite": true,
+    "module": "commonjs",
+    "moduleResolution": "node16"
+  }
+}

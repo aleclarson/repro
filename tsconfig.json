@@ -1,7 +1,6 @@
 {
-  "exclude": ["src/pkg"],
-  "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node16"
-  }
+  "references": [
+    {"path": "./src"},
+    {"path": "./src/pkg"}
+  ]
 }
