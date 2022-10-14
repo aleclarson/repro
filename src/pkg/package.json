@@ -1,0 +1,13 @@
+{
+  "name": "pkg",
+  "scripts": {
+    "build": "rimraf dist && tsc --incremental -p .",
+    "dev": "rimraf dist && tsc --incremental -p . --watch --sourcemap"
+  },
+  "exports": {
+    "./foo": {
+      "types": "./dist/foo.d.ts",
+      "default": "./dist/foo.js"
+    }
+  }
+}

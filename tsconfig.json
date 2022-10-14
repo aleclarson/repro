@@ -1,0 +1,7 @@
+{
+  "exclude": ["src/pkg"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node16"
+  }
+}

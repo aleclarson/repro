@@ -1,0 +1,25 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleclarson/repro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleclarson/repro/issues"
+  },
+  "homepage": "https://github.com/aleclarson/repro#readme",
+  "dependencies": {
+    "@alloc/fast-rimraf": "^1.0.8",
+    "@pkg": "workspace:pkg@*",
+    "typescript": "4.9.0-dev.20221013"
+  }
+}

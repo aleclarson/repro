@@ -1,0 +1,29 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      '@alloc/fast-rimraf': ^1.0.8
+      '@pkg': workspace:pkg@*
+      typescript: 4.9.0-dev.20221013
+    dependencies:
+      '@alloc/fast-rimraf': 1.0.8
+      '@pkg': link:src/pkg
+      typescript: 4.9.0-dev.20221013
+
+  src/pkg:
+    specifiers: {}
+
+packages:
+
+  /@alloc/fast-rimraf/1.0.8:
+    resolution: {integrity: sha512-TsRTRLLDW6Q4fWBAYlbkcaHQDAANKsI0smrhS/1x7/GHcjVxo+r+2VRbqrWaYpmjdhvCp5v7n2wtwkMYp+Kivw==}
+    hasBin: true
+    dev: false
+
+  /typescript/4.9.0-dev.20221013:
+    resolution: {integrity: sha512-4Bo+yrQ+bCi8y2jB4oUajM4uxhluhGgTV0gESr/H8tvpOUqM0kT9swHxlc5fTXnzJFxQi8dbUg5rIfIQXakW2g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
