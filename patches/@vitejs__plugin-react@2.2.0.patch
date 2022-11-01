@@ -1,0 +1,118 @@
+diff --git a/dist/index.cjs b/dist/index.cjs
+index 0aa8d5163ec2f4a7f7e9876ace1f512030072688..49b2e2fbe89c0c742eba9ab0bc1832dcfd2fb324 100644
+--- a/dist/index.cjs
++++ b/dist/index.cjs
+@@ -242,13 +242,26 @@ function viteReact(opts = {}) {
+   const viteBabel = {
+     name: "vite:react-babel",
+     enforce: "pre",
+-    config() {
++    config(_, { mode }) {
++      const isProduction2 = (process.env.NODE_ENV || process.env.VITE_USER_NODE_ENV || mode) === "production";
+       if (opts.jsxRuntime === "classic") {
+         return {
+           esbuild: {
+             logOverride: {
+               "this-is-undefined-in-esm": "silent"
+-            }
++            },
++            jsx: "transform",
++            jsxImportSource: opts.jsxImportSource,
++            jsxSideEffects: opts.jsxPure === false
++          }
++        };
++      } else {
++        return {
++          esbuild: {
++            jsxDev: !isProduction2,
++            jsx: "automatic",
++            jsxImportSource: opts.jsxImportSource,
++            jsxSideEffects: opts.jsxPure === false
+           }
+         };
+       }
+@@ -327,17 +340,6 @@ function viteReact(opts = {}) {
+             const isOptimizedReactDom = id.startsWith(resolvedCacheDir) && id.includes("/react-dom.js");
+             const [restoredAst, isCommonJS] = !isProjectFile && !isJSX && !isOptimizedReactDom ? await restoreJSX(babel__namespace, code, id) : [null, false];
+             if (isJSX || (ast = restoredAst)) {
+-              plugins.push([
+-                await loadPlugin(
+-                  "@babel/plugin-transform-react-jsx" + (isProduction ? "" : "-development")
+-                ),
+-                {
+-                  runtime: "automatic",
+-                  importSource: opts.jsxImportSource,
+-                  pure: opts.jsxPure !== false,
+-                  throwIfNamespace: opts.jsxThrowIfNamespace
+-                }
+-              ]);
+               if (isCommonJS) {
+                 plugins.push(babelImportToRequire);
+               }
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index 5adcda3a14d0628639e6812d57fb2d0b2de4fe59..b4d86cbfdad92dc363012d11e4f2357a8f16be34 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -26,11 +26,6 @@ interface Options {
+      * @default true
+      */
+     jsxPure?: boolean;
+-    /**
+-     * Toggles whether or not to throw an error if an XML namespaced tag name is used.
+-     * @default true
+-     */
+-    jsxThrowIfNamespace?: boolean;
+     /**
+      * Babel configuration applied in both dev and prod.
+      */
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 4294f5e8a1956922a83b7f1cdc81c5e76a27dbeb..c690aa6a4a34fea98c2d1f28a26cdd797843f1f1 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -227,13 +227,26 @@ function viteReact(opts = {}) {
+   const viteBabel = {
+     name: "vite:react-babel",
+     enforce: "pre",
+-    config() {
++    config(_, { mode }) {
++      const isProduction2 = (process.env.NODE_ENV || process.env.VITE_USER_NODE_ENV || mode) === "production";
+       if (opts.jsxRuntime === "classic") {
+         return {
+           esbuild: {
+             logOverride: {
+               "this-is-undefined-in-esm": "silent"
+-            }
++            },
++            jsx: "transform",
++            jsxImportSource: opts.jsxImportSource,
++            jsxSideEffects: opts.jsxPure === false
++          }
++        };
++      } else {
++        return {
++          esbuild: {
++            jsxDev: !isProduction2,
++            jsx: "automatic",
++            jsxImportSource: opts.jsxImportSource,
++            jsxSideEffects: opts.jsxPure === false
+           }
+         };
+       }
+@@ -312,17 +325,6 @@ function viteReact(opts = {}) {
+             const isOptimizedReactDom = id.startsWith(resolvedCacheDir) && id.includes("/react-dom.js");
+             const [restoredAst, isCommonJS] = !isProjectFile && !isJSX && !isOptimizedReactDom ? await restoreJSX(babel, code, id) : [null, false];
+             if (isJSX || (ast = restoredAst)) {
+-              plugins.push([
+-                await loadPlugin(
+-                  "@babel/plugin-transform-react-jsx" + (isProduction ? "" : "-development")
+-                ),
+-                {
+-                  runtime: "automatic",
+-                  importSource: opts.jsxImportSource,
+-                  pure: opts.jsxPure !== false,
+-                  throwIfNamespace: opts.jsxThrowIfNamespace
+-                }
+-              ]);
+               if (isCommonJS) {
+                 plugins.push(babelImportToRequire);
+               }
