@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "devDependencies": {
+    "tsconfck": "^3.1.4",
+    "typescript": "^5.7.2"
+  }
+}

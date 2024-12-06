@@ -1,0 +1,8 @@
+{
+  "include": ["./my-lib"],
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./my-app/*", "./my-lib/*"]
+    }
+  }
+}
