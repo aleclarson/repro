@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">tauri-repro</string>
+    <string name="main_activity_title">tauri-repro</string>
+</resources>
