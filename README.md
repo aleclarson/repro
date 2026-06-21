@@ -3,8 +3,6 @@
 This is a minimal reproduction for a Bun client aborting a streaming `POST`
 response without the Bun-hosted `node:http` server observing a close event.
 
-It does not use Rouzer or any third-party dependencies.
-
 Run:
 
 ```sh
