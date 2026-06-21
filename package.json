@@ -1,0 +1,8 @@
+{
+  "name": "bun-post-stream-abort-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "bun run repro.ts"
+  }
+}
