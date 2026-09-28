@@ -1,0 +1,8 @@
+{
+	"name": "nativescript-vite-11472-repro",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"vite": "8.3.0"
+	}
+}
