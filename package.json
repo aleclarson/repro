@@ -1,0 +1,17 @@
+{
+  "name": "perry-yaml-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node verify.mjs"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "perry": {
+    "strict": true
+  }
+}
